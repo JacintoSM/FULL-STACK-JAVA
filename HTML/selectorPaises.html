@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Paises</title>
+    <script src="/JS/selectorPaises.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bandera {
+            width: 100px;
+            height: 100px;
+        }
+
+        .escudo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .alineado {
+
+            display: inline-flexbox;
+        }
+
+        #nombre {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #moneda {
+            text-align: center;
+        }
+
+        #capital {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body onload="cargaSelectContinentes()" style="background-color: coral">
+    <div class="container">
+        <header>
+            <div class="alineado bg-danger">
+                <img src="https://mainfacts.com/media/images/coats_of_arms/pe.png" class="bandera" />
+            </div>
+            <div class="alineado align-text-center bg-success">
+                <div id="nombre" class="text-center">PAISES</div>
+            </div>
+
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item" onclick="cargaDatosGenerales()">
+                        <a class="nav-link" href="#">GENERALES</a>
+                    </li>
+                    <li class="nav-item" onclick="cargaDatosGeograficos()">
+                        <a class="nav-link">GEOGRAFICOS</a>
+                    </li>
+                    <li class="nav-item" onclick="cargaDatosTecnicos()">
+                        <a class="nav-link">TECNICOS</a>
+                    </li>
+                    <li class="nav-item" onclick="cargaBandera()">
+                        <a class="nav-link" href="#">BANDERAS</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <div><br><br>
+                continentes:<select id="continentes" onchange="cargaPaisesDeContinente(this.value)"></select>
+                <option value="0">Selecciona continente...</option>
+                </select>
+                paises:<select id="paises" onchange="verPais(this.value)"></select>
+                <option value="0">Selecciona pais...</option>
+            </div>
+            <div>
+                <h4>
+                    <posicion-menu />
+                </h4>
+            </div>
+            <img id="bandera"> <img id="escudo">
+            <table class="table" id="tabla"></table>
+            </table>
+            <p id="capital"></p>
+            <p id="dominio"></p>
+            <p id="alfaCodigo2"></p>
+            <p id="alfaCodigo3"></p>
+            <p id="fronteras"></p>
+            <p id="latitud"></p>
+            <p id="mapa"></p>
+            <div id="enlace"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

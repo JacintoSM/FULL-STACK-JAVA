@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JS/script.js"></script>
+
+    
+</head>
+<body>
+    <form action="#" method = "get">
+        nombre:<input type="text" name="nombre"><br>
+        apellido:<input type="text" name="apellidos"><br>
+        buscar: <input type="search" name "q"><br>
+        sexo:hombre<input type="radio" name="sexo" value ="hombre">
+        mujer<input type="radio" name ="sexo" value="mujer"><br>
+        deportes:
+        <ul>
+            <li >futbol:<input type ="checkbox" name="futbol" checked></li>
+            <li>baloncesto:<input type ="checkbox" name="baloncesto" checked disabled></li>
+            <li>golf:<input type ="checkbox" name="golf"></li>
+            <li>natacion:<input type ="checkbox" name="natacion"></li>
+            <li>ciclismo:<input type ="checkbox" name="ciclismo"></li>
+        </ul>
+        <ul id="lista"></ul>
+        <textarea name ="observaciones"cols=100 rows="10"></textarea>
+        <select name="provincias" id="provincia">
+            <option value="0"> selecciona provincia....</option>
+            <option value="28">Madrid</option>
+            <option value="08" selected>Barcelona</option>
+            <option value="06">Badajoz"</option>
+        </select>
+        <button type="button" onclick="numerosPrimos(35)">enviar</button>
+    </form>
+
+</body>
+</html>

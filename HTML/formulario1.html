@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-10 bg-success">FORMULARIOS</div> 
+           <div class="col-lg-10 col-md-2 bg-primary">FORMULARIO 1 </div>
+           <div class="table-responsive-sm">
+           <table class ="table table-primary table-hover table-bordered" align="center" border="1">
+            <form action="#" method="get">
+
+                <tr>
+                    <td> nombre: </td>
+                    <td><input type="text" name="nombre"></td>
+                </tr>
+                <tr>
+                    <td>apellido1:</td>
+                    <td><input type="text" name="apellido1"></td>
+                </tr>
+                <tr>
+                    <td>apellido2:</td>
+                    <td><input type="text" name=apellido2"></td>
+
+                </tr>
+                <tr>
+                    <td>direccion:</td>
+                    <td> <input type="text" name="direccion"></td>
+                </tr>
+                <tr>
+                    <td>codigo Postal:</td>
+                    <td><input type="text" name="codigo Postal"></td>
+                </tr>
+                <tr>
+                    <td>poblacion:</td>
+                    <td><input type="text" name="poblacion>"></td>
+                </tr>
+                <tr>
+                    <td>fechaNacimiento:</td>
+                    <td><input type="date" name="fechaNacimiento"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">sexo</td>
+                    <td>hombre:<input type="radio" name="sexo" value="hombre"></td>
+                </tr>
+                <tr>
+                    <td> mujer:<input type="radio" name="sexo" value="mujer"></td>
+                </tr>
+                <tr>
+                    <td allign="center">deporters:</td>
+                    <td>
+                        <ul type="none">
+                            <li class="text-info">futbol:<input type="checkbox" name="futbol" ckecked </li>
+                            <li class="text-warning">baloncesto:<input type="checkbox" name="baloncesto"></li>
+                            <li class="text-primary">golf:<input type="checkbox" name="golf" </li>
+                            <li class="text-success">balonmano:<input type="checkbox" name="balonmano"></li>
+                            <li class="text-blue"> ciclismo:<input type="checkbox" name="ciclismo"></li>
+                            <li class="text-danger">tenis:<input type="checkbox" name="tenis"></li>
+                            <li class="text-ligth">ajedrez<input type="checkbox" name="ajedrez"></li>
+                            <li class="text-muted">karate:<input type="checkbox" name="karate"></li>
+                            <li class="text-dark">yudo:<input type="checkbox" name="yudo" ckecked></li>
+                            <li class="text-secondary">taikondo:<input type="checkbox" name="taikondo"></li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>profesion:<select name="profesion">
+                            <option value=" "> selecciona profesion....</option>
+                            <option value="Analista Organico">informatico</option>
+                            <option value="contable">contable</option>
+                            <option value="jefe contable">jefe contable"</option>
+                            <option value="jefe proyecto">jefe proyacto</option>
+                            <option value="administrativo">administrativo</option>
+                            <option value="consultor IT">consultor IT</option>
+                            <option value="programador" selected>programador</option>
+                            <option value="analista-programador ">analista-programador</option>
+                            <option value="Director Proyectos">Director Proyectos</option>
+                            <option value="Analista Funcional">Analista Funcional</option>
+
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center"><button type="submit">enviar</button></td>
+                </tr>
+
+            </form>
+            </table>
+        </div>
+     </div>
+    </div>
+</body>
+
+</html>
