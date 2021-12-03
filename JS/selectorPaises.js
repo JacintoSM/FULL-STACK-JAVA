@@ -56,13 +56,19 @@ cargaDatosGeograficos = () => {
     latitud.innerHTML = "LATITUD LOGITUD :   " + pais[0].latlng;
     mapa.innerHTML="";
     mapa.innerHTML = "ENLACE MAPA :   " + pais[0].maps.openStreetMaps;
+
     let div = document.querySelector("#enlace");
     let a = document.createElement("a");
     a.href = pais[0].maps.openStreetMaps;
     a.target = "_blank";
+    let agoogleMaps = document.createElement("a");
+    agoogleMaps.href = pais[0].maps.googleMaps;
+    agoogleMaps.target = "_blank";
     div.innerHTML="";
-    a.innerHTML = "pulsa aqui para ver el mapa del PAIS";
+    a.innerHTML = "pulsa aqui para ver el mapa StreetMaps del Pais";
+    agoogleMaps.innerHTML= "pulse aqui para ver el mapa googleMaps del Pais";
     div.appendChild(a);
+    div.appendChild(agoogleMaps);
 
 
 }
