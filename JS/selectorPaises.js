@@ -77,10 +77,10 @@ cargaDatosTecnicos = () => {
     let alfaCod2 = document.querySelector("#alfaCodigo2");
     let alfaCod3 = document.querySelector("#alfaCodigo3");
     let fronteras = document.querySelector("#fronteras");
-    dominio.innerHTML = "DOMINIO TLD   " + pais[0].tld;
-    alfaCod2.innerHTML = "CODIGO ALFA 2  " + pais[0].cca2;
-    alfaCod3.innerHTML = "CODIGO ALFA 3  " + pais[0].cca3;
-    fronteras.innerHTML = "FRONTERAS   " + pais[0].borders;
+    dominio.innerHTML = "DOMINIO TLD  :  " + pais[0].tld;
+    alfaCod2.innerHTML = "CODIGO ALFA 2 :  " + pais[0].cca2;
+    alfaCod3.innerHTML = "CODIGO ALFA 3 :  " + pais[0].cca3;
+    fronteras.innerHTML = "FRONTERAS  :  " + pais[0].borders;
 }
 cargaDatosGenerales = () => {
     let moneda = document.querySelector("#moneda");
